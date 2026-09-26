@@ -1,0 +1,10 @@
+{
+  "description": "Explore a charming flower shop website featuring a storefront design, allowing users to browse and visualize their floral selections in a delightful setting.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

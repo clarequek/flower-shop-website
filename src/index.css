@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Sue+Ellen+Francisco&family=Nunito:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-yellow: #F2C94C;
+  --color-yellow-light: #FBE68A;
+  --color-yellow-dark: #D4A820;
+  --color-yellow-ink: #8B6B00;
+  --color-pink: #F7A8BE;
+  --color-pink-light: #FDD6E4;
+  --color-pink-dark: #E8779A;
+  --color-cream: #FFF9F5;
+  --font-display: 'Oooh Baby', cursive;
+  --font-body: 'Nunito', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #FFF9F5;
+  overflow-x: hidden;
+}
+
+.polka-bg {
+  background-color: #FFF9F5;
+  background-image:
+    radial-gradient(circle, #F7A8BE 1.5px, transparent 1.5px),
+    radial-gradient(circle, #F7A8BE 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+.page-enter {
+  animation: fadeSlideUp 0.4s ease forwards;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.flower-card:hover .flower-emoji {
+  transform: scale(1.15) rotate(-4deg);
+}
+
+.flower-emoji {
+  transition: transform 0.25s ease;
+  display: inline-block;
+}
+
+::-webkit-scrollbar { width: 0; background: transparent; }
